@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        body{text-align: center;background:url('/static/1.png') no-repeat;height:100%;width:100%;overflow:hidden;
+        background-size:cover;}
+    </style>
+</head>
+<body>
+    <div style="width:100%;text-align:center">
+        <form action="" method="post">
+            <h1>信用卡预测</h1>
+            {% for message in get_flashed_messages() %}
+                {{ message }}
+            {% endfor %}
+            <br>
+            <label>用户名：</label><input type="text" name="user" placeholder="请输入用户名">
+            <br><br>
+            <label>密&nbsp&nbsp&nbsp&nbsp码：</label><input type="password" name="pwd" placeholder="请输入密码">
+            <br><br>
+            <button type="submit">登录</button>
+        </form>
+    </div>
+</body>
+</html>
